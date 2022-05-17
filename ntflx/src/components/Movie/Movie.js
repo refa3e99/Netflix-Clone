@@ -6,7 +6,10 @@ function Movie(props) {
     {
         props.movies.map((movie)=>{
             return(<>
-                <CardMovie movie={movie}/>
+                <CardMovie key={movie.id}
+                movie={movie}
+                
+                />
                 <ModalMovie />
             </>
             )
