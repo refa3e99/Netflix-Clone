@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieList from "../MovieList/MovieList";
+import NavBar from "../NavBar/NavBar";
+import FavList from "../FavList/FavList";
 
 function Home(props) {
  const [movies , setMovies] = useState([]);
@@ -19,6 +21,7 @@ function Home(props) {
     {
       (movies.length>0)&&<MovieList movies={movies}/>
     }
+    
     
 </>)
 }
