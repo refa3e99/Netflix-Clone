@@ -1,4 +1,5 @@
 import { Nav , Navbar, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function NavBar(props) {
     return (   
     <>
@@ -6,9 +7,8 @@ function NavBar(props) {
     <Container>
     <Navbar.Brand href="#home">Netflix Clone</Navbar.Brand>
     <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Favourite Movies</Nav.Link>
-      <Nav.Link href="#pricing">Movies</Nav.Link>
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/favlist">Favourite Movies</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

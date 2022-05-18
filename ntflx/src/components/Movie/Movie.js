@@ -10,7 +10,6 @@ function Movie(props) {
                 movie={movie}
                 
                 />
-                <ModalMovie />
             </>
             )
         })
